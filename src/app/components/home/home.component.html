@@ -1,71 +1,49 @@
-<body>
-  <!-- Banner Section -->
-  <section class="home-banner text-center">
-    <div class="banner-content">
+ <body>
+ 
+ <!-- Banner Section -->
+<section class="home-banner">
+    <div class="banner-content text-center">
       <h1>Welcome to PnoWorld</h1>
       <p>Your gateway to all village services</p>
     </div>
   </section>
-
+  
   <!-- Services Section -->
   <section class="services-section container my-5">
     <div class="row text-center">
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-md-4 mb-4">
         <div class="service-card">
           <i class="bi bi-wrench-adjustable-circle-fill service-icon"></i>
           <h3>Services</h3>
-          <p>Get your services fixed quickly by local experts.</p>
-          <button class="btn service-btn" (click)="navigateToService()">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="service-card">
-          <i class="bi bi-building service-icon"></i>
-          <h3>Hotels</h3>
-          <p>Find the best hotels with top ratings.</p>
-          <button class="btn service-btn" (click)="navigateToHotels()">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="service-card">
-          <i class="bi bi-geo-alt service-icon"></i>
-          <h3>Shop Details</h3>
-          <p>Discover local shops and their offerings.</p>
-          <button class="btn service-btn">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="service-card">
-          <i class="bi bi-geo-alt service-icon"></i>
-          <h3>Hospitals</h3>
-          <p>Find top-rated hospitals in the areay.</p>
-          <button class="btn service-btn">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="service-card">
-          <i class="bi bi-geo-alt service-icon"></i>
-          <h3>Medical Services</h3>
-          <p>Discover various medical services.</p>
-          <button class="btn service-btn">Learn More</button>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="service-card">
-          <i class="bi bi-geo-alt service-icon"></i>
-          <h3>Visiting Places</h3>
-          <p>Explore the best places to visit.</p>
-          <button class="btn service-btn" (click)="navigateToPlaces()">Learn More</button>
+          <p>Get your services fixed quickly and efficiently by local experts.</p>
+          <button class="btn service-btn"  (click)="navigateToService()">Learn More</button>
         </div>
       </div>
       
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="bi bi-building service-icon"></i>
+          <h3>Hotels</h3>
+          <p>Find the best hotels with top ratings, addresses, and more details.</p>
+          <button class="btn service-btn" (click)="navigateToHotels()">Learn More</button>
+        </div>
+      </div> 
+      
+      <div class="col-md-4 mb-4">
+        <div class="service-card">
+          <i class="bi bi-geo-alt service-icon"></i>
+          <h3>Visiting Places</h3>
+          <p>Explore the best places to visit, including beaches, parks, and more.</p>
+          <button class="btn service-btn" (click)="navigateToPlaces()">Learn More</button>
+        </div>
+      </div>
     </div>
   </section>
-
+  
   <!-- Transport Section -->
   <section class="transport-section container my-5">
     <div class="row text-center">
-      <div class="col-lg-6 col-md-12 mb-4">
+      <div class="col-md-6 mb-4">
         <div class="transport-card">
           <i class="bi bi-bus-front-fill transport-icon"></i>
           <h3>Bus Timings</h3>
@@ -73,7 +51,7 @@
           <button class="btn transport-btn">View Schedule</button>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 mb-4">
+      <div class="col-md-6 mb-4">
         <div class="transport-card">
           <i class="bi bi-car-front-fill transport-icon"></i>
           <h3>Auto & Car Booking</h3>
@@ -83,9 +61,29 @@
       </div>
     </div>
   </section>
-
   
-
+  <!-- Shop Section -->
+  <section class="shop-section container my-5">
+    <div class="row text-center">
+      <div class="col-md-6 mb-4">
+        <div class="shop-card">
+          <i class="bi bi-shop shop-icon"></i>
+          <h3>Shop Details</h3>
+          <p>Discover local shops and their offerings, all in one place.</p>
+          <button class="btn shop-btn">Explore Shops</button>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="shop-card">
+          <i class="bi bi-cart-fill shop-icon"></i>
+          <h3>Local Deals</h3>
+          <p>Check out exclusive deals and discounts available in the village.</p>
+          <button class="btn shop-btn">See Deals</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Description Section -->
   <section class="description-section text-center py-5">
     <div class="container">
@@ -93,13 +91,14 @@
       <p>PnoWorld is your one-stop destination for all village-related services, providing easy access to essential information and booking services.</p>
     </div>
   </section>
-
+  
   <!-- Creative Content Section -->
   <section class="creative-section py-5">
     <div class="container">
       <h2 class="text-center mb-4">Explore Our Services</h2>
       <div class="row text-center">
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-book service-icon"></i>
             <h4>School</h4>
@@ -107,7 +106,8 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-house-door service-icon"></i>
             <h4>Home Rent</h4>
@@ -115,7 +115,8 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-mortarboard service-icon"></i>
             <h4>Tuition</h4>
@@ -123,7 +124,8 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-person-video service-icon"></i>
             <h4>Coaching Center</h4>
@@ -131,7 +133,8 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-bookmark service-icon"></i>
             <h4>Courses</h4>
@@ -139,7 +142,8 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
+  
+        <div class="col-md-4 mb-4">
           <div class="service-card">
             <i class="bi bi-laptop service-icon"></i>
             <h4>Training</h4>
@@ -147,10 +151,13 @@
             <button class="btn service-btn">Learn More</button>
           </div>
         </div>
+  
+   
+  
       </div>
     </div>
   </section>
-
+  
   <!-- Footer Section -->
   <footer class="footer text-center py-3">
     <p>&copy; 2024 PnoWorld. All rights reserved.</p>

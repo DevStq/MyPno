@@ -1,0 +1,70 @@
+.custom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .nav-button {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722;
+    transform: scale(1.1);
+  }
+  
+  .nav-link span {
+    margin-top: 0.1rem;
+    font-size: 0.75rem;
+  }
+  
+  /* Active State (optional, for router-based links) */
+  .nav-link.active {
+    color: #ff5722;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .nav-link i {
+      font-size: 1.25rem;
+    }
+  
+    .nav-link span {
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-link i {
+      font-size: 1rem;
+    }
+  
+    .nav-link span {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Visiting Places</h2>
+    <div class="places-list">
+      <div class="place-card" *ngFor="let place of places">
+        <img [src]="place.imageUrl" alt="{{ place.name }}" class="place-image">
+        <div class="place-details">
+          <h3>{{ place.name }}</h3>
+          <p><strong>Type:</strong> {{ place.type }}</p>
+          <p>{{ place.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Hotels</h2>
+    <div class="hotel-list">
+      <div class="hotel-card" *ngFor="let hotel of hotels">
+        <img [src]="hotel.imageUrl" alt="{{ hotel.name }}" class="hotel-image">
+        <div class="hotel-details">
+          <h3>{{ hotel.name }}</h3>
+          <p><strong>Rating:</strong> {{ hotel.rating }} / 5</p>
+          <p><strong>Address:</strong> {{ hotel.address }}</p>
+          <p>{{ hotel.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

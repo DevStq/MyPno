@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* News Feed Section Styling */
+  .news-feed-section {
+    padding-top: 20px;
+  }
+  
+  /* News Card Styling */
+  .news-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* News Header Styling */
+  .news-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .news-author h5 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .news-author p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  /* News Content Styling */
+  .news-content {
+    margin-top: 20px;
+  }
+  
+  .news-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* News Actions Styling */
+  .news-actions {
+    margin-top: 20px;
+  }
+  
+  .news-action-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-action-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .news-card {
+      padding: 15px;
+    }
+  
+    .profile-image {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .news-author h5 {
+      font-size: 1rem;
+    }
+  
+    .news-author p {
+      font-size: 0.75rem;
+    }
+  
+    .news-action-btn {
+      padding: 8px 15px;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .news-card {
+      padding: 10px;
+    }
+  
+    .profile-image {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .news-author h5 {
+      font-size: 0.875rem;
+    }
+  
+    .news-author p {
+      font-size: 0.75rem;
+    }
+  
+    .news-action-btn {
+      padding: 5px 10px;
+      font-size: 0.75rem;
+    }
+  }
+  

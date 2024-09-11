@@ -1,0 +1,52 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .places-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .place-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .place-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .place-details {
+    text-align: center;
+  }
+  
+  .place-details h3 {
+    margin-top: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .place-card {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .place-image {
+      width: 50%;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .place-details {
+      flex: 1;
+    }
+  }
+  

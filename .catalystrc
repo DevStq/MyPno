@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "8891000000007078",
+      "name": "PnoWorld",
+      "domain": {
+        "id": "50022113107",
+        "name": "pnoworld-60032385135.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60032385135",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

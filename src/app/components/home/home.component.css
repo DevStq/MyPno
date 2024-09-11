@@ -10,8 +10,7 @@ body {
 /* Banner Section Styling */
 .home-banner {
   background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-position: center;
+   
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -36,7 +35,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   text-align: center;
-  height: 100%; /* Ensure cards take full height of their container */
 }
 
 .service-icon, .transport-icon, .shop-icon {
@@ -52,75 +50,83 @@ body {
 
 .service-card p, .transport-card p, .shop-card p {
   font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Button Styling */
 .btn {
   padding: 0.75rem 1.5rem;
-  border: none;
   border-radius: 5px;
+  color: white;
+  border: none;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #007bff;
-  color: white;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.service-btn {
+  background-color: rgb(9, 9, 52); /* Orange */
 }
 
-/* Section Styling */
-.services-section, .transport-section, .description-section, .creative-section {
-  padding: 2rem;
+.service-btn:hover {
+  background-color:rgba(255, 68, 0, 0.677);
+  transform: translateY(-2px);
+}
+
+.transport-btn {
+  background-color: #2196f3; /* Blue */
+}
+
+.transport-btn:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+.shop-btn {
+  background-color: #4caf50; /* Green */
+}
+
+.shop-btn:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+/* Description Section Styling */
+.description-section {
+  background-color: #f1f1f1;
+  padding: 3rem 1rem;
 }
 
 .description-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.description-section p {
-  font-size: 1.125rem;
+/* Creative Section Styling */
+.creative-section {
+  background-color: #ffffff;
 }
 
+.creative-section h2 {
+  margin-bottom: 2rem;
+}
+
+ 
 /* Footer Styling */
 .footer {
-  background-color: #f1f1f1;
-  padding: 1rem;
- 
-  bottom: 0;
-  width: 100%;
+  background-color: #2196f3;
+  color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .home-banner {
-    height: 50vh;
-  }
-
-  .banner-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .banner-content p {
-    font-size: 1rem;
-  }
-
-  .service-card, .transport-card, .shop-card {
-    margin-bottom: 1rem;
+/* Media Queries */
+@media (max-width: 767px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-@media (max-width: 576px) {
-  .service-card, .transport-card, .shop-card {
-    padding: 1.5rem;
-  }
-
-  .service-icon, .transport-icon, .shop-icon {
-    font-size: 2rem;
-  }
-
-  .service-card h3, .transport-card h3, .shop-card h3 {
-    font-size: 1.25rem;
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }

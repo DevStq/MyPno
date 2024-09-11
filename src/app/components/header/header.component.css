@@ -1,138 +1,134 @@
- /* Header Styling */
-header {
-  background-color: #000000;
-  color: white;
-  padding: 1rem;
-  position: relative;
-}
-
+ /* Header container */
 .header-container {
+  position: relative; /* Allow absolute positioning of logout button */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  padding: 10px 20px;
+  background-color: #000000;
+  border-bottom: 1px solid #dee2e6;
 }
 
+/* Header title */
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+  color: orangered;
+}
+
+/* Search container */
 .search-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 600px;
+  margin: 10px auto; /* Center and space out the search container */
 }
 
+/* Search input */
 .search-input {
-  width: 100%;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  font-size: 1rem;
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
 }
 
+/* Search button */
 .search-button {
-  padding: 0.5rem 1rem;
+  padding: 8px 12px;
   border: none;
-  border-radius: 0 5px 5px 0;
-  background-color: #007bff;
+  border-radius: 4px;
+  background-color: orangered;
   color: white;
   cursor: pointer;
-  font-size: 1rem;
 }
 
-.search-button:hover {
-  background-color: #0056b3;
-}
-
-/* User Info Styling */
+/* User info container */
 .user-info {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  position: absolute; /* Positioning the user info in the top right corner */
+  top: 10px;
+  right: 20px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: white;
-  z-index: 10;
+  gap: 10px; /* Space between name and button */
 }
 
+/* User name */
 .user-name {
   font-size: 1rem;
-  font-weight: 500;
 }
 
+/* Logout button */
 .logout-button {
-  padding: 0.5rem 1rem;
+  padding: 8px 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #dc3545;
   color: white;
   cursor: pointer;
-  font-size: 0.9rem;
 }
 
-.logout-button:hover {
-  background-color: #c82333;
-}
-
-/* Responsive Styling */
-@media (max-width: 992px) {
-  .search-container {
-    max-width: 100%;
-  }
-
-  .user-info {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: 1rem;
-    justify-content: center;
-  }
-
-  .logout-button {
-    font-size: 0.8rem;
-  }
-}
-
+/* Mobile view adjustments */
 @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+    position: relative; /* Ensure positioning is relative */
+  }
+
   .search-container {
     flex-direction: column;
     align-items: stretch;
+    margin: 10px 0;
   }
 
   .search-input {
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
+    margin-bottom: 10px;
   }
 
   .search-button {
     width: 100%;
-    border-radius: 5px;
   }
 
   .user-info {
-    flex-direction: column;
-    align-items: center;
+    position: static; /* Position user info normally in mobile view */
+    width: 100%;
+    justify-content: flex-end; /* Align items to the end */
+    margin-top: 10px;
+    gap: 8px;
   }
 
   .user-name {
-    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
   }
 
   .logout-button {
-    width: 100%;
-    border-radius: 5px;
-    font-size: 0.8rem;
+    padding: 6px 10px;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 576px) {
-  .header-container {
-    padding: 0.5rem;
+  .header-title {
+    font-size: 1.25rem;
   }
 
-  .search-input,
-  .search-button,
+  .search-input {
+    padding: 6px;
+  }
+
+  .search-button {
+    padding: 6px;
+  }
+
+  .user-name {
+    font-size: 0.75rem;
+  }
+
   .logout-button {
-    font-size: 0.7rem;
+    padding: 5px 8px;
+    font-size: 0.75rem;
   }
 }
